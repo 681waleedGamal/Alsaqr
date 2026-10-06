@@ -13,6 +13,22 @@
 
   gtag('config', 'AW-18496560148');
 </script>
+  <!-- Event snippet for تواصل من الموقع (3) conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18496560148/KTKCCOe_4pMdEJS47PNE',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
   <meta name="description" content="مؤسسة الصقر لتنظيم وتأجير لوازم الحفلات والمناسبات: تاجير طاولات وكراسي، كنب فاخر، جلسات شعبية، كوش وطاولات استقبال، وخدمات ضيافة قهوجيين وصبابين في الدمام، الخبر، الرياض، وجدة. اتصل الآن 0539617844">
   <meta name="keywords" content="مؤسسة الصقر, تاجير طاولات وكراسي, تاجير كنب, تاجير جلسات شعبية, تاجير كوش, طاولات استقبال, قهوجيين وصبابين, تاجير مستلزمات حفلات, الدمام, الخبر, الرياض, جدة">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -669,10 +685,10 @@
 
   <!-- Floating Call & WhatsApp Buttons -->
   <aside class="sticky-contact" aria-label="أزرار التواصل السريع">
-    <a href="https://wa.me/966539617844" class="float-btn float-wa" target="_blank" rel="noopener" title="محادثة واتساب فورية" aria-label="واتساب">
+    <a href="https://wa.me/966539617844" class="float-btn float-wa" target="_blank" rel="noopener" title="محادثة واتساب فورية" aria-label="واتساب" onclick="return gtag_report_conversion(this.href);">
       <i class="fab fa-whatsapp"></i>
     </a>
-    <a href="tel:0539617844" class="float-btn float-tel" title="اتصال هاتفي مباشر" aria-label="اتصال">
+    <a href="tel:0539617844" class="float-btn float-tel" title="اتصال هاتفي مباشر" aria-label="اتصال" onclick="return gtag_report_conversion(this.href);">
       <i class="fas fa-phone-alt"></i>
     </a>
   </aside>
@@ -711,10 +727,10 @@
         نوفر أرقى تجهيزات المناسبات بالمملكة: تأجير طاولات وكراسي VIP، كنب ملكي، جلسات شعبية وخارجية، كوش أفراح وطاولات استقبال، وخدمة قهوجيين وصبابين بالزي الرسمي في الدمام، الخبر، الظهران، الجبيل، القطيف، الأحساء، الرياض، وجدة على مدار 24 ساعة.
       </p>
       <div class="btn-row">
-        <a href="tel:0539617844" class="btn btn-gold">
+       <a href="tel:0539617844" class="btn btn-gold" onclick="return gtag_report_conversion(this.href);">
           <i class="fas fa-phone-alt"></i> اتصل بنا: 0539617844
         </a>
-        <a href="https://wa.me/966539617844" class="btn btn-whatsapp" target="_blank" rel="noopener">
+        <a href="https://wa.me/966539617844" class="btn btn-whatsapp" target="_blank" rel="noopener" onclick="return gtag_report_conversion(this.href);">
           <i class="fab fa-whatsapp"></i> حجز سريع عبر واتساب
         </a>
       </div>
@@ -848,7 +864,7 @@
 
       <div class="section-footer-info">
         <p><i class="fas fa-check-circle" style="color: var(--primary);"></i> متوفر كراسي مفردة وبالكميات الكبيرة مع مفارش وأغطية فاخرة حسب الطلب.</p>
-        <a href="https://wa.me/966539617844?text=طلب%20استفسار%20عن%20تأجير%20طاولات%20وكراسي" class="sec-cta" target="_blank" rel="noopener">
+        <a href="https://wa.me/966539617844?text=طلب%20استفسار%20عن%20تأجير%20طاولات%20وكراسي" class="sec-cta" target="_blank" rel="noopener" onclick="return gtag_report_conversion(this.href);">
           طلب حجز الطاولات والكراسي <i class="fas fa-arrow-left"></i>
         </a>
       </div>
@@ -925,7 +941,7 @@
 
       <div class="section-footer-info">
         <p><i class="fas fa-couch" style="color: var(--primary);"></i> جاهزية تامة لتجهيز الصالات والقاعات وخيام كبار الشخصيات بأفخم أطقم الكنب.</p>
-        <a href="https://wa.me/966539617844?text=طلب%20استفسار%20عن%20تأجير%20كنب" class="sec-cta" target="_blank" rel="noopener">
+        <a href="https://wa.me/966539617844?text=طلب%20استفسار%20عن%20تأجير%20كنب" class="sec-cta" target="_blank" rel="noopener" onclick="return gtag_report_conversion(this.href);">
           طلب حجز أطقم الكنب <i class="fas fa-arrow-left"></i>
         </a>
       </div>
@@ -981,7 +997,7 @@
 
       <div class="section-footer-info">
         <p><i class="fas fa-fire" style="color: var(--primary);"></i> نوفر أيضاً دفايات شتوية ومكيفات صحراوية لتجهيز جلسات الهواء الطلق في كل الفصول.</p>
-        <a href="https://wa.me/966539617844?text=طلب%20استفسار%20عن%20تأجير%20جلسات%20شعبية" class="sec-cta" target="_blank" rel="noopener">
+        <a href="https://wa.me/966539617844?text=طلب%20استفسار%20عن%20تأجير%20جلسات%20شعبية" class="sec-cta" target="_blank" rel="noopener" onclick="return gtag_report_conversion(this.href);">
           طلب حجز الجلسات الشعبية <i class="fas fa-arrow-left"></i>
         </a>
       </div>
@@ -1086,7 +1102,7 @@
 
       <div class="section-footer-info">
         <p><i class="fas fa-heart" style="color: var(--primary);"></i> تصاميم مخصصة حسب رغبة العروسين وألوان القاعة مع ممرات شرف بنفسجية وخزامية.</p>
-        <a href="https://wa.me/966539617844?text=طلب%20استفسار%20عن%20كوش%20وطاولات%20استقبال" class="sec-cta" target="_blank" rel="noopener">
+        <a href="https://wa.me/966539617844?text=طلب%20استفسار%20عن%20كوش%20وطاولات%20استقبال" class="sec-cta" target="_blank" rel="noopener" onclick="return gtag_report_conversion(this.href);">
           طلب حجز وتنسيق الكوش <i class="fas fa-arrow-left"></i>
         </a>
       </div>
@@ -1135,7 +1151,7 @@
 
       <div class="section-footer-info">
         <p><i class="fas fa-mug-hot" style="color: var(--primary);"></i> نوفر دلال رسلان، طاسات تمور، فناجيل فاخرة، وشاي بأنواعه لكافة المناسبات الرسمية والعائلية.</p>
-        <a href="https://wa.me/966539617844?text=طلب%20حجز%20قهوجيين%20وصبابين" class="sec-cta" target="_blank" rel="noopener">
+        <a href="https://wa.me/966539617844?text=طلب%20حجز%20طاقم%20الضيافة%20والقهوجيين" class="sec-cta" target="_blank" rel="noopener" onclick="return gtag_report_conversion(this.href);">
           طلب حجز طاقم الضيافة والقهوجيين <i class="fas fa-arrow-left"></i>
         </a>
       </div>
@@ -1177,10 +1193,10 @@
         تواصل مع مؤسسة الصقر الآن واحصل على استشارة فورية وعروض أسعار خاصة تناسب احتفالك في كافة مدن المملكة.
       </p>
       <div class="btn-row">
-        <a href="tel:0539617844" class="btn btn-gold">
+        <a href="tel:0539617844" class="btn btn-gold" onclick="return gtag_report_conversion(this.href);">
           <i class="fas fa-phone-alt"></i> اتصل بنا: 0539617844
         </a>
-        <a href="https://wa.me/966539617844" class="btn btn-whatsapp" target="_blank" rel="noopener">
+       <a href="https://wa.me/966539617844" class="btn btn-whatsapp" target="_blank" rel="noopener" onclick="return gtag_report_conversion(this.href);">
           <i class="fab fa-whatsapp"></i> محادثة واتساب الآن
         </a>
       </div>
@@ -1202,7 +1218,7 @@
         <a href="#section-coffee">قهوجيين وصبابين</a>
       </p>
       <p style="margin-top: 15px;">
-        للحجز والاستفسار المباشر 24 ساعة: <a href="tel:0539617844" style="direction: ltr; display: inline-block;">0539617844</a> | الموقع الرسمي: <a href="https://www.ksahafalat.com/">ksahafalat.com</a>
+        للحجز والاستفسار المباشر 24 ساعة: <a href="tel:0539617844" style="direction: ltr; display: inline-block;" onclick="return gtag_report_conversion(this.href);">0539617844</a>>0539617844</a> | الموقع الرسمي: <a href="https://www.ksahafalat.com/">ksahafalat.com</a>
       </p>
       <div class="copy-text">
         © 2026 جميع الحقوق محفوظة - مؤسسة الصقر لتنظيم وتأجير لوازم الحفلات والمناسبات
